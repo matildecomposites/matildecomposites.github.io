@@ -1,0 +1,733 @@
+/*
+
+Personal Online Portfolio Mugi Yamamoto
+
+*/
+
+
+
+/* =WordPress Core
+
+-------------------------------------------------------------- */
+
+
+
+
+/*
+Die folgende zeile passt alle fonts in tabellen an.
+*/
+td {
+font-family: "open sans";
+}
+
+
+
+.alignnone {
+
+    margin: 5px 20px 20px 0;
+
+}
+
+
+
+.aligncenter,
+
+div.aligncenter {
+
+    display: block;
+
+    margin: 5px auto 5px auto;
+
+}
+
+
+
+.alignright {
+
+    float:right;
+
+    margin: 5px 0 20px 20px;
+
+}
+
+
+
+.alignleft {
+
+    float: left;
+
+    margin: 5px 20px 20px 0;
+
+}
+
+
+
+.aligncenter {
+
+    display: block;
+
+    margin: 5px auto 5px auto;
+
+}
+
+
+
+a img.alignright {
+
+    float: right;
+
+    margin: 5px 0 20px 20px;
+
+}
+
+
+
+a img.alignnone {
+
+    margin: 5px 20px 20px 0;
+
+}
+
+
+
+a img.alignleft {
+
+    float: left;
+
+    margin: 5px 20px 20px 0;
+
+}
+
+
+
+a img.aligncenter {
+
+    display: block;
+
+    margin-left: auto;
+
+    margin-right: auto
+
+}
+
+
+
+.wp-caption {
+
+    background: #fff;
+
+    border: 1px solid #f0f0f0;
+
+    max-width: 96%; /* Image does not overflow the content area */
+
+    padding: 5px 3px 10px;
+
+    text-align: center;
+
+}
+
+
+
+.wp-caption.alignnone {
+
+    margin: 5px 20px 20px 0;
+
+}
+
+
+
+.wp-caption.alignleft {
+
+    margin: 5px 20px 20px 0;
+
+}
+
+
+
+.wp-caption.alignright {
+
+    margin: 5px 0 20px 20px;
+
+}
+
+
+
+.wp-caption img {
+
+    border: 0 none;
+
+    height: auto;
+
+    margin: 0;
+
+    max-width: 98.5%;
+
+    padding: 0;
+
+    width: auto;
+
+}
+
+
+
+.wp-caption p.wp-caption-text {
+
+    margin: 0;
+
+    padding: 0 4px 5px;
+
+}
+
+
+
+/* Global */
+
+body, div { margin: 0; padding: 0; }
+
+body { font-size: 13px; font-family: verdana; color: #333; line-height: 15px;  }
+
+h1,h2,h3,h4,h5,p { margin: 10px 0; }
+
+img { border: none; }
+
+p { line-height: 19px; }
+
+.left { float: left; }
+
+.right { float: right; }
+
+.clear { clear: both; }
+
+.desktop_clear { clear: both; }
+
+a { color: #333; text-decoration: none; }
+
+a:hover { color: #888 }
+
+#main_container { width: 1132px; margin: 0 auto; }
+
+
+
+/* Header */
+
+#header { padding: 20px 0 20px 0; }
+
+#header .left { width: 280px; }
+
+#header .left img { max-width: 280px; height: inherit; }
+
+#header .right { width: 600px; }
+
+.logo { float: left; }
+
+.head_social { float: right; }
+
+.head_social img { float: left; margin-left: 10px; }
+
+
+
+#menu_container { max-width: 720px; float: right; margin-right: 00px; }
+
+#menu_container ul { list-style-type: none; margin: 0; padding: 0; }
+
+#menu_container ul li { float: left; font-size: 14px; margin: 0 17px; text-transform: uppercase; }
+
+#menu_container ul li a { color: #BFBFCA; text-decoration: none; }
+
+#menu_container ul li a:hover { color: #000; }
+
+#menu_container ul li.current-menu-item a, #menu_container ul li.current_page_item a { color: #000; }
+
+#menu_container ul li ul { display: none; }
+
+
+
+.cat_menu_container { float: right; margin: 15px 75px 0 0; }
+
+.cat_menu_container ul { list-style-type: none; margin: 0; padding: 0; }
+
+.cat_menu_container ul li { float: left; padding: 0 14px 0 9px; background: url('/web/20131108230428im_/http://www.mugiyamamoto.com/wp-content/themes/squareboxRes/images/cat-menu-divider.jpg') no-repeat; background-position: center right; }
+
+.cat_menu_container ul li a { color: #BFBFCA; text-decoration: none; }
+
+.cat_menu_container ul li a:hover { text-decoration: underline; }
+
+.cat_menu_container ul li.current-menu-item a, .cat_menu_container ul li.current_page_item a { text-decoration: underline; }
+
+.cat_menu_container ul li:last-child { background: none; }
+
+.cat_menu_container ul li ul { display: none; }
+
+
+
+
+
+
+
+
+/* Content */
+
+#slideshow_cont { width: 852px; height: 282px; float: left; margin-right: 4px; margin-bottom: 4px; position: relative; }
+
+#slideshow img { width: 852px; height: 282px; display: none; position: absolute; top: 0; left: 0; z-index: 5; }
+
+#slideshow img.first_img { display: block; }
+
+.slide_prev { position: absolute; left: 10px; top: 125px; z-index: 10; cursor: pointer; display: none; }
+
+.slide_next { position: absolute; right: 10px; top: 125px; z-index: 10; cursor: pointer; display: none; }
+
+
+
+.home_post_box { float: left; width: 280px; height: 280px; margin-right: 4px; margin-bottom: 4px; position: relative; cursor: pointer; }
+
+.home_post_box img { width: 280px; height: 280px; }
+
+.home_post_box_last { margin-right: 0; }
+
+.home_post_text { left: 0px; bottom: 0px; position: absolute; width: 280px; background-color: rgba(255, 255, 255, .5); padding: 15px 10px; color: #727272; display: none; }
+
+.home_post_text h3 { margin-top: 0; color: #000; font-size: 14px; margin-bottom: 0px; font-weight: normal;  }
+
+.home_post_text p { margin: 0; }
+
+
+
+.home_blog_box { float: left; width: 280px; height: auto !important; cursor: auto !important; margin-right: 4px; margin-bottom: 4px; min-height: 280px; }
+
+.home_blog_box img { width: 280px; height: 280px; }
+
+.home_blog_box_last { margin-right: 0; }
+
+.home_blog_box h4 { font-size: 16px;  font-weight: normal; }
+
+
+
+#single_cont  { }
+
+.single_left { float: left; width: 867px; }
+
+h1.single_title { margin-top: 0; margin-bottom: 15px; font-size: 18px; font-weight: normal; }
+
+#commentform input[type=submit] { background-color: #161616; color: #fff; border: 1px solid #6E6E6E; padding: 3px 5px; }
+
+.load_more_cont { clear: both; }
+
+#infscr-loading { opacity: 0; }
+
+
+
+/* Sidebar */
+
+#sidebar { width: 210px; float: right; }
+
+
+
+.side_box { margin-bottom: 25px; }
+
+.side_box h3.side_title { margin-top: 0; font-size: 14px; }
+
+.side_box ul { list-style-type: none; margin: 0; padding: 0; }
+
+.side_box ul li { margin-bottom: 10px; }
+
+
+
+.t1_search_cont { position: relative; width: 210px; }
+
+.t1_search_cont input[type=text] { width: 190px; height: 17px; border: 1px solid #E5E5E5; padding: 3px 15px 3px 5px;  }
+
+.t1_search_icon { position: absolute; top: 6px; right: 3px; }
+
+
+
+/* Footer */
+
+#footer { padding: 5px 0 15px 0; }
+
+.footer_box_cont { width: 404px; padding-right: 20px; margin-right: 4px; float: left; }
+
+.footer_box { margin-bottom: 25px; }
+
+.footer_box ul { list-style-type: none; margin: 0; padding: 0; }
+
+.footer_box ul li { margin-bottom: 10px; }
+
+.footer_box_cont_last { margin-right: 0; }
+
+h3.footer_title { margin-top: 0; margin-bottom: 15px; padding-bottom: 10px; background: url('/web/20131108230428im_/http://www.mugiyamamoto.com/wp-content/themes/squareboxRes/images/footer-title-line.jpg') no-repeat; background-position: bottom left; font-weight: normal; font-size: 15px; text-transform: uppercase; }
+
+
+
+.footer_text { padding: 25px 0 15px; text-align: right; }
+
+
+
+
+
+
+
+/* for tablet landscape */
+
+@media only screen and (max-width: 959px) {
+
+	.desktop_clear { clear: none; }
+
+	.tablet_clear { clear: both; }
+
+	
+
+	#main_container { width: 808px; }
+
+	#header .left { width: 350px; }
+
+	#header .left img { max-width: 350px; height: inherit; }		
+
+	#header .right { width: 540px; }	
+
+	
+
+	
+
+	.cat_menu_container { float: right; margin: 5px 5px 0 0; }
+
+	#menu_container { max-width: 840px; float: right; margin-right: 0px; clear: both; margin-top: 10px; }	
+
+	.tagline { width: 650px; }	
+
+	.home_post_box_last { margin-right: 4px; }
+
+	.home_post_box_tablet_last { margin-right: 0; }
+
+	
+
+	#slideshow_cont { width: 808px; height: 234px; margin-right: 0px; }
+
+	#slideshow img { width: 808px; height: 234px; }
+
+	#slideshow img.first_img { display: block; }	
+
+	
+
+	.slide_prev { top: 110px; }
+
+	.slide_next { top: 110px; }	
+
+	
+
+	.home_post_box { float: left; width: 400px; height: 400px; }
+
+	.home_post_box img { width: 400px; height: 400px; }	
+
+	.home_post_text { width: 400px; }	
+
+	
+
+	.home_blog_box { width: 400px; margin-right: 4px; margin-bottom: 4px; min-height: 400px; }
+
+	.home_blog_box img { width: 400px; height: 400px; }	
+
+	
+
+	.home_blog_box_last { margin-right: 4px; }
+
+	.home_blog_box_tablet_last { margin-right: 0; }
+
+	
+
+	.single_left { width: 525px; }	
+
+	.single_inside_content img { max-width: 525px; height: inherit; }
+
+	
+
+	#sidebar { width: 150px; }	
+
+	.t1_search_cont { width: 150px; }
+
+	.t1_search_cont input[type=text] { width: 130px;  }	
+
+	
+
+	.footer_box_cont { width: 212px; padding-right: 20px; margin-right: 4px; float: left; }	
+
+
+
+}
+ /* for tablet Portrait */
+
+@media only screen and (max-width: 959px) {
+
+	
+
+	.desktop_clear { clear: none; }
+
+	.tablet_clear { clear: both; }
+
+	
+
+	#main_container { width: 708px; }
+
+	#header .left { width: 250px; }
+
+	#header .left img { max-width: 250px; height: inherit; }		
+
+	#header .right { width: 440px; }	
+
+	
+
+	
+
+	.cat_menu_container { float: right; margin: 5px 5px 0 0; }
+
+	#menu_container { max-width: 740px; float: right; margin-right: 0px; clear: both; margin-top: 10px; }	
+
+	.tagline { width: 650px; }	
+
+	.home_post_box_last { margin-right: 4px; }
+
+	.home_post_box_tablet_last { margin-right: 0; }
+
+	
+
+	#slideshow_cont { width: 708px; height: 234px; margin-right: 0px; }
+
+	#slideshow img { width: 708px; height: 234px; }
+
+	#slideshow img.first_img { display: block; }	
+
+	
+
+	.slide_prev { top: 110px; }
+
+	.slide_next { top: 110px; }	
+
+	
+
+	.home_post_box { float: left; width: 350px; height: 350px; }
+
+	.home_post_box img { width: 350px; height: 350px; }	
+
+	.home_post_text { width: 350px; }	
+
+	
+
+	.home_blog_box { width: 350px; margin-right: 4px; margin-bottom: 4px; min-height: 350px; }
+
+	.home_blog_box img { width: 350px; height: 350px; }	
+
+	
+
+	.home_blog_box_last { margin-right: 4px; }
+
+	.home_blog_box_tablet_last { margin-right: 0; }
+
+	
+
+	.single_left { width: 525px; }	
+
+	.single_inside_content img { max-width: 525px; height: inherit; }
+
+	
+
+	#sidebar { width: 150px; }	
+
+	.t1_search_cont { width: 150px; }
+
+	.t1_search_cont input[type=text] { width: 130px;  }	
+
+	
+
+	.footer_box_cont { width: 212px; padding-right: 20px; margin-right: 4px; float: left; }	
+
+
+
+}
+
+/* for mobile landscape */
+@media screen and (max-width: 766px) {
+	
+	.desktop_clear { clear: none; }
+
+	.tablet_clear { clear: none; }
+
+	
+
+	#main_container { width: 308px; }	
+
+	#header .left { width: 308px; float: none; }
+
+	#header .left img { max-width: 308px; height: inherit; }	
+
+	
+
+	#header .right { float: none; width: auto; }
+
+	.head_social { display: none; }
+
+	
+
+	#menu_container { margin: 15px 0 0 9px; float: left; }
+
+	#menu_container ul li { margin: 0 10px 0 0; font-size: 14px; }
+
+	
+
+	.cat_menu_container { float: right; margin: 15px 0px 10px 0; }	
+
+	
+
+	
+
+	#slideshow_cont { display: none; }
+
+	.home_post_box { float: none; width: 300px; height: 300px; }
+
+	.home_post_box img { width: 300px; height: 300px; }	
+
+	.home_post_text { width: 300px; left: 0px; }			
+
+	
+
+	.home_post_box_last { margin-right: 0px; }
+
+	.home_post_box_tablet_last { margin-right: 0; }	
+
+	
+
+	.home_blog_box { width: 300px; margin-right: 0px; margin-bottom: 4px; min-height: 0; margin-bottom: 25px; }
+
+	.home_blog_box img { width: 300px; height: 300px; }	
+
+	
+
+	.home_blog_box_last { margin-right: 0px; }
+
+	.home_blog_box_tablet_last { margin-right: 0; }	
+
+	
+
+	.single_left { width: 308px; float: none; margin: 0 auto 25px; }	
+
+	.single_inside_content img { max-width: 308px; height: inherit; }
+
+	
+
+	#commentform textarea { max-width: 300px; }
+
+	#sidebar { display: none; }
+
+	
+
+	.footer_box_cont { width: 308px; padding-right: 0px; margin-right: 0px; float: none; margin-bottom: 25px; }	
+
+	
+
+}
+
+
+/* for mobile portrait */
+@media screen and (max-width: 479px) {
+
+
+
+	
+
+	.desktop_clear { clear: none; }
+
+	.tablet_clear { clear: none; }
+
+	
+
+	#main_container { width: 308px; }	
+
+	#header .left { width: 308px; float: none; }
+
+	#header .left img { max-width: 308px; height: inherit; }	
+
+	
+
+	#header .right { float: none; width: auto; }
+
+	.head_social { display: none; }
+
+	
+
+	#menu_container { margin: 15px 0 0 9px; float: left; }
+
+	#menu_container ul li { margin: 0 10px 0 0; font-size: 14px; }
+
+	
+
+	.cat_menu_container { float: right; margin: 15px 0px 10px 0; }	
+
+	
+
+	
+
+	#slideshow_cont { display: none; }
+
+	.home_post_box { float: none; width: 300px; height: 300px; }
+
+	.home_post_box img { width: 300px; height: 300px; }	
+
+	.home_post_text { width: 300px; left: 0px; }			
+
+	
+
+	.home_post_box_last { margin-right: 0px; }
+
+	.home_post_box_tablet_last { margin-right: 0; }	
+
+	
+
+	.home_blog_box { width: 300px; margin-right: 0px; margin-bottom: 4px; min-height: 0; margin-bottom: 25px; }
+
+	.home_blog_box img { width: 300px; height: 300px; }	
+
+	
+
+	.home_blog_box_last { margin-right: 0px; }
+
+	.home_blog_box_tablet_last { margin-right: 0; }	
+
+	
+
+	.single_left { width: 308px; float: none; margin: 0 auto 25px; }	
+
+	.single_inside_content img { max-width: 308px; height: inherit; }
+
+	
+
+	#commentform textarea { max-width: 300px; }
+
+	#sidebar { display: none; }
+
+	
+
+	.footer_box_cont { width: 308px; padding-right: 0px; margin-right: 0px; float: none; margin-bottom: 25px; }	
+
+	
+
+}
+/*
+     FILE ARCHIVED ON 23:04:28 Nov 08, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:56:40 Nov 02, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 110.326
+  exclusion.robots: 0.077
+  exclusion.robots.policy: 0.071
+  RedisCDXSource: 14.87
+  esindex: 0.006
+  LoadShardBlock: 78.543 (3)
+  PetaboxLoader3.datanode: 90.338 (4)
+  CDXLines.iter: 14.883 (3)
+  load_resource: 72.728
+  PetaboxLoader3.resolve: 26.295
+*/
